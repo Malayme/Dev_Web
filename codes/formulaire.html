@@ -16,10 +16,11 @@
 
             .form-example, .radio-input {
                 color: white;
-                padding: 20px;
+                padding: 10px;
                 border-radius: 10px;
                 width: 300px;
                 margin: 0 auto;
+                align-items: center;
             }
 
             form {
@@ -42,6 +43,26 @@
                 margin: 10px 0;
             }    
             
+            .form-example input {
+                width: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+                border: 1px solid #435dd8;
+                border-radius: 10px;
+                background-color: white;
+                color: black;
+            }
+
+            #message {
+                border: 1px solid #435dd8;
+                border-radius: 10px;
+                padding: 10px;
+                box-sizing: border-box;
+                background-color: white;
+                color: black;
+
+            }
+
             .radio-input {
             display: flex;
             flex-direction: column;
@@ -75,6 +96,7 @@
 
             .radio-input label:has(input:checked)::before {
             border-color: #435dd8;
+            border-width: 2px;
             height: 50px;
             background-color: rgba(67, 93, 216, 0.1);
             z-index: 2;
@@ -87,8 +109,8 @@
             .radio-input .label input[type="radio"] {
             background-color: #202030;
             appearance: none;
-            width: 17px;
-            height: 17px;
+            width: 15px;
+            height: 15px;
             border-radius: 50%;
             display: flex;
             justify-content: center;

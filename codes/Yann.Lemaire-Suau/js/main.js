@@ -76,7 +76,7 @@ function enregistrerReponse(reponseId) {
     reponses.push(reponseId);
     questionIndex++;
 
-    if (questionIndex < questionnaire.lenght) {
+    if (questionIndex < questionnaire.length) {
         afficherQuestion();
     } else {
         afficherResultats();

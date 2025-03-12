@@ -24,6 +24,9 @@ function calculer() {
 
 //Java script pour le questionnaire
 
+let reponses = [];
+let questionIndex = 0;
+
 const questionnaire = [
     {
         question: 'Quand le premier Monster Hunter est sorti ?',
@@ -54,9 +57,6 @@ const questionnaire = [
     }
     //Ajouter questions
 ];
-
-let reponses = [];
-let questionIndex = 0;
 
 function afficherQuestion() {
     const questionContainer = document.getElementById('question-container');
